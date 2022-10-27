@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-import "./SearchBarStyles.css";
-
-import React from "react";
 import { useNavigate } from "react-router";
+
+import "./SearchBarStyle.scss";
 
 const SearchBar = () => {
   const [term, setTerm] = useState();
