@@ -4,7 +4,7 @@ import { useTheme } from "../../hooks/useTheme";
 
 import React from "react";
 
-import "./RecipeListStyles.css";
+import "./RecipeListStyle.scss";
 
 const RecipeList = ({ recipes }) => {
   const { color, mode } = useTheme();

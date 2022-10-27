@@ -1,0 +1,64 @@
+//variables
+$color-white: #fff;
+$color-yellow: #ffdb4d;
+$color-darkgray: #555;
+$color-white2: #e2e2e2;
+$color-white3: #e4e4e4;
+
+.recipe-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    .card {
+        background: $color-white;
+        color: $color-yellow;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        position: relative;
+        margin-bottom: 30px;
+        &:hover{
+            transform: rotate(1.5deg);
+            border-radius: 25px;
+        }
+        h3{
+            color:whitesmoke;
+            margin-bottom: 6px;
+        }
+        p{
+            color: whitesmoke;
+            font-size: 0.9em;
+        }
+        div{
+            color: whitesmoke;
+            font-size: 0.7em;
+            margin: 20px 0;
+            line-height: 1.5em;
+        }
+        a {
+            color: $color-darkgray;
+            text-decoration: none;
+            display: block;
+            background: $color-white2;
+            font-size: 0.9em;
+            width: 100px;
+            text-align: center;
+            padding: 8px;
+            border-radius: 4px;
+            margin: 20px auto 0;
+            &:hover{
+                background: $color-darkgray;
+                color: $color-white2;
+            }
+        }
+    }
+    .card.dark{
+        background: $color-darkgray;
+        div, p, h3{
+            color: $color-white3;
+        }
+    }
+}
