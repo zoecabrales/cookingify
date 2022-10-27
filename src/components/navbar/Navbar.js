@@ -6,7 +6,7 @@ import { useTheme } from "../../hooks/useTheme";
 //components
 import SearchBar from "../../components/SearchBar/SearchBar";
 
-import "./NavbarStyles.css";
+import "./NavbarStyle.scss";
 
 const Navbar = () => {
   const { color } = useTheme();

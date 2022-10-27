@@ -1,0 +1,33 @@
+//variables
+$color-dark-purple: #58249c;
+$color-white: #fff;
+
+.navbar{
+    background: $color-dark-purple;
+    padding: 20px;
+    color: $color-white;
+    nav {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    a.brand{
+        margin-right: auto;
+        color: $color-white;
+        text-decoration: none;
+    }
+    a:last-child{
+        color: $color-white;
+        text-decoration: none;
+        margin-left: 40px;
+        padding: 8px;
+        border: 1px solid $color-white;
+        border-radius: 4px;
+    }
+    a:last-child:hover{
+        background: $color-white;
+        color: black;
+    }
+
+}
